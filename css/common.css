@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+.visually-hidden { 
+    position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); padding:0 !important; border:0 !important; height: 1px !important; width: 1px !important; overflow: hidden;
+}
+ 
+p {
+    color: var(--secondary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line:none;
+}
+
+/*стилизация логотипа*/
+
+.main-title {
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+/*site nav*/
+
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-link a:hover,
+.contacts-link a:focus,
+.social-links a:hover,
+.social-links a:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/*Contacts*/
+ .contacts-link a {
+    color: var(--secondary-text-color);
+}
+
+/*Стилизация кнопок*/
+.button {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.875; 
+}
+
+.button.main,
+.button:hover,
+.button:focus,
+.holder:hover,
+.icon:hover
+ {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+ /*Стилизация футера*/
+.address,
+footer b,
+footer .social-links a {
+    font-style: normal;
+    color: var(--primary-white-color);
+}
+
+footer {
+    background-color: #2F303A;
+}
+
+footer .logo {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+.address .contacts-link {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
