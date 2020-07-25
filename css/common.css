@@ -17,12 +17,21 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     font-style: normal;
     letter-spacing: 0.03em;
 }
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 .visually-hidden { 
     position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); padding:0 !important; border:0 !important; height: 1px !important; width: 1px !important; overflow: hidden;
 }
@@ -32,6 +41,7 @@ p {
 }
 
 ul {
+    padding: 0;
     list-style: none;
 }
 
@@ -43,6 +53,21 @@ a {
     text-decoration-line:none;
 }
 
+.container {
+    padding: 94px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: solid 2px tomato;
+}
+
+.container.header {
+    padding: 32px 15px;
+}
+
+.no-padding {
+    padding-top: 0;
+}
 /*стилизация логотипа*/
 
 .main-title {
@@ -61,7 +86,17 @@ a {
     color: var(--accent-color);
 }
 
+/*Page header*/
+
+/*.page-header {
+background-color: turquoise;
+}*/
+
 /*site nav*/
+
+.site-nav-list {
+    padding: 0;
+}
 
 .site-nav .link {
     color: var(--primary-text-color);
@@ -81,6 +116,11 @@ a {
 }
 
 /*Contacts*/
+
+.contacts-link {
+    padding: 0;
+}
+
  .contacts-link a {
     color: var(--secondary-text-color);
 }
