@@ -28,7 +28,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+a {
     margin: 0;
 }
 
@@ -42,6 +43,7 @@ p {
 
 ul {
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -54,15 +56,21 @@ a {
 }
 
 .container {
+    margin: 0;
     padding: 94px 15px;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    outline: solid 2px tomato;
+    /*outline: solid 2px tomato;*/
 }
 
-.container.header {
+/*Page header*/
+
+.header {
     padding: 32px 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
 }
 
 .no-padding {
@@ -76,17 +84,18 @@ a {
 }
 
 .logo {
+    display: inline-block;
+    margin-right: 85px;
     font-family: Raleway, sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
+    color: var(--primary-text-color);
 }
 
 .logo span {
     color: var(--accent-color);
 }
-
-/*Page header*/
 
 /*.page-header {
 background-color: turquoise;
@@ -94,31 +103,47 @@ background-color: turquoise;
 
 /*site nav*/
 
+.navigation {
+    display: flex;
+    align-items: baseline;
+    margin-right: auto;
+}
+
 .site-nav-list {
+    display: flex;
     padding: 0;
 }
 
-.site-nav .link {
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav-list .link {
     color: var(--primary-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
+.site-nav-list .link:hover,
+.site-nav-list .link:focus,
 .contacts-link a:hover,
 .contacts-link a:focus,
-.social-links a:hover,
-.social-links a:focus {
+.social-item a:hover,
+.social-item a:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav-list .link.current {
     color: var(--accent-color);
 }
 
 /*Contacts*/
 
-.contacts-link {
+.header .contacts-link {
+    display: flex;
     padding: 0;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 30px;
 }
 
  .contacts-link a {
@@ -126,35 +151,48 @@ background-color: turquoise;
 }
 
 /*Стилизация кнопок*/
+
 .button {
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    line-height: 1.875; 
+    line-height: 1.875;
+    border: 0; 
 }
 
-.button.main,
+.button,
+.button-filter:hover,
+.button-filter:focus,
 .button:hover,
 .button:focus,
-.holder:hover,
-.icon:hover
+.occupation-type:hover,
+.icon-client:hover
  {
+    margin: 0;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
  /*Стилизация футера*/
-.address,
-footer b,
-footer .social-links a {
-    font-style: normal;
-    color: var(--primary-white-color);
+
+.footer {
+    display: flex;
+    align-items: baseline;
+    padding: 60px 15px;
 }
 
 footer {
     background-color: #2F303A;
 }
 
-footer .logo {
+.address,
+.footer .appeal-text,
+.footer .social-links a {
+    font-style: normal;
+    color: var(--primary-white-color);
+}
+
+.footer .logo {
+    margin-bottom: 20px;
     font-family: Raleway, sans-serif;
     font-weight: bold;
     font-size: 26px;
@@ -164,7 +202,49 @@ footer .logo {
 }
 
 .address .contacts-link {
+    margin-bottom: 9px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.address {
+    margin-bottom: 9px;
+    margin-right: 59px;
+}
+
+.appeal-list {
+    display: flex;
+}
+
+.appeal:not(:last-child) {
+    margin-right: 105px;
+}
+
+.appeal-text {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 33px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-text-color);
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.appeal.sign {
+    display: flex;
+    flex-direction: column;
+}
+
+.appeal .button {
+    display: inline-block;
+}
+
+
+

@@ -12,24 +12,24 @@
   <body>
     <header class="page-header">
       <div class="container header">
-        <nav>
+        <nav class="navigation">
           <a href="/" class="logo"><span>Web</span> Studio</a>
   
           <ul class="site-nav-list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="nav-item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
   
         <ul class="contacts-link">
-          <li>
+          <li class="contacts-item">
             <img src="./img/envelope.svg" alt="конверт">
             <a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer">
               info@devstudio.com</a>
           </li>
   
-          <li>
+          <li class="contacts-item">
             <img src="./img/smartphone.svg" alt="смартфон">
             <a href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
@@ -40,7 +40,7 @@
     <main>
  
     <!--Секция шапка или герой-->
-    <div >
+    <div class="container">
       <section class="section hero">
         <h1 class="section-title main-title">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="button main">Заказать услугу</button>
@@ -52,31 +52,31 @@
       <div class="container">
         <h2 class="section-title visually-hidden">Особенности нашей работы</h2>
 
-      <ul class="advantages">
-        <li class="holder">
-          <img class="holder-img" src="./img/antenna.svg" alt="антенна">
-          <h3>Внимание к деталям</h3>
-          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-        </li>
+        <ul class="advantages">
+          <li class="holder">
+            <img class="holder-img" src="./img/antenna.svg" alt="антенна">
+            <h3>Внимание к деталям</h3>
+            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          </li>
 
-        <li class="holder">
-          <img class="holder-img" src="./img/clock.svg" alt="часы">
-          <h3>Пунктуальность</h3>
-          <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-        </li>
+          <li class="holder">
+            <img class="holder-img" src="./img/clock.svg" alt="часы">
+            <h3>Пунктуальность</h3>
+            <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+          </li>
 
-        <li class="holder">
-          <img class="holder-img" src="./img/diagram.svg" alt="диаграмма в ноутбуке">
-          <h3>Планирование</h3>
-          <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-        </li>
+          <li class="holder">
+            <img class="holder-img" src="./img/diagram.svg" alt="диаграмма в ноутбуке">
+            <h3>Планирование</h3>
+            <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+          </li>
 
-        <li class="holder">
-          <img class="holder-img" src="./img/astronaut.svg" alt="астронавт">
-          <h3>Современные технологии</h3>
-          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </li>
-      </ul>
+          <li class="holder">
+            <img class="holder-img" src="./img/astronaut.svg" alt="астронавт">
+            <h3>Современные технологии</h3>
+            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -85,25 +85,25 @@
       <div class="container no-padding">
         <h2 class="section-title">Чем мы занимаемся</h2>
 
-      <ul>
-        <li>
+      <ul class="occupation">
+        <li class="occupation-item">
           <a href="">
             <img src="./img/leptop.jpg" alt="ноутбук" width="370">
-            <h3 class="holder">Десктопные приложения</h3>
+            <h3 class="occupation-type">Десктопные приложения</h3>
           </a>
         </li>
 
-        <li>
+        <li class="occupation-item">
           <a href="">
             <img src="./img/smartphone.jpg" alt="смартфон" width="370">
-            <h3 class="holder">Мобильные приложения</h3>
+            <h3 class="occupation-type">Мобильные приложения</h3>
           </a>
         </li>
 
-        <li>
+        <li class="occupation-item">
           <a href="">
             <img src="./img/monitor.jpg" alt="монитор" width="370">
-            <h3 class="holder">Дизайнерские решения</h3>
+            <h3 class="occupation-type">Дизайнерские решения</h3>
           </a>
         </li>
       </ul>
@@ -111,59 +111,59 @@
     </section>
 
     <!--Секция Наша команда-->
-    <section class="section">
+    <section class="section team">
       <div class="container team">
         <h2 class="section-title">Наша команда</h2>
-      <ul>
-        <li>
+      <ul class="list-team">
+        <li class="card-team">
           <img class="photo-team" src="./img/nikolay_kucherenko.jpg" alt="фото Николай Кучеренко" width="270">
           <h3 class="name-team">Николай Кучеренко</h3>
           <p class="position-team">Product Designer</p>
 
           <ul class="social-links">
-            <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
           </ul>
         </li>
 
-        <li>
+        <li class="card-team">
           <img class="photo-team" src="./img/olga_ivanova.png" alt="фото Ольга Иванова" width="270">
           <h3 class="name-team">Ольга Иванова</h3>
           <p class="position-team">Frontend Developer</p>
 
           <ul class="social-links">
-            <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
           </ul>
         </li>
 
-        <li>
+        <li class="card-team">
           <img class="photo-team" src="./img/andrey_schevchenko.png" alt="фото Андрей Шевченко" width="270">
           <h3 class="name-team">Андрей Шевченко</h3>
           <p class="position-team">Marketing</p>
 
           <ul class="social-links">
-            <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
           </ul>
         </li>
 
-        <li>
+        <li class="card-team">
           <img class="photo-team" src="./img/ivan_nikolaev.png" alt="фото Иван Николаев" width="270">
           <h3 class="name-team">Иван Николаев</h3>
           <p class="position-team">UI Designer</p>
 
           <ul class="social-links">
-            <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-            <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+            <li class="social-item"><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
           </ul>
 
           <!-- <ul>
@@ -181,13 +181,13 @@
     <section class="section">
       <div class="container client">
         <h2 class="section-title">Постоянные клиенты</h2>
-      <ul>
-        <li class="icon"><a href=""><img src="./img/YA&CO.svg" alt="Логотип компании"></a></li>
-        <li class="icon"><a href=""><img src="./img/company_tagline_here.svg" alt="Логотип компании"></a></li>
-        <li class="icon"><a href=""><img src="./img/company.svg" alt="Логотип компании"></a></li>
-        <li class="icon"><a href=""><img src="./img/foster_peters.svg" alt="Логотип компании"></a></li>
-        <li class="icon"><a href=""><img src="./img/brand.svg" alt="Логотип компании"></a></li>
-        <li class="icon"><a href=""><img src="./img/company_tagline.svg" alt="Логотип компании"></a></li>
+      <ul class="list-client">
+        <li class="icon-client"><a href=""><img src="./img/YA&CO.svg" alt="Логотип компании"></a></li>
+        <li class="icon-client"><a href=""><img src="./img/company_tagline_here.svg" alt="Логотип компании"></a></li>
+        <li class="icon-client"><a href=""><img src="./img/company.svg" alt="Логотип компании"></a></li>
+        <li class="icon-client"><a href=""><img src="./img/foster_peters.svg" alt="Логотип компании"></a></li>
+        <li class="icon-client"><a href=""><img src="./img/brand.svg" alt="Логотип компании"></a></li>
+        <li class="icon-client"><a href=""><img src="./img/company_tagline.svg" alt="Логотип компании"></a></li>
       </ul>
       </div>
     </section>
@@ -196,36 +196,43 @@
     <!-- Секция Футера -->
     <footer>
       <div class="container footer">
-        <a href="/" class="logo"><span>Web</span> Studio</a>
-      <address class="address">
-        <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="contacts-link">
-          <li><a href="mailto:info@example.com" target="_blank" rel="noopener noreferrer">
-            info@example.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+        <address class="address">
+          <a href="/" class="logo"><span>Web</span> Studio</a>
+          <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="contacts-link">
+            <li><a href="mailto:info@example.com" target="_blank" rel="noopener noreferrer">
+              info@example.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
       
-      <b>Присоединяйтесь</b>
-      <ul class="social-links">
-        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-          aria-label="Ссылка на Instagram">Instagram</a>
-        </li>
+       <div class="appeal-list">
+          <div class="appeal">
+            <b class="appeal-text">Присоединяйтесь</b>
+            <ul class="social-links">
+             <li class="social-item"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+               aria-label="Ссылка на Instagram">Instagram</a>
+             </li>
 
-        <li><a href="https://Twitter.com" target="_blank" rel="noopener noreferrer"
-          aria-label="Ссылка на Twitter">Twitter</a>
-        </li>
+             <li class="social-item"><a href="https://Twitter.com" target="_blank" rel="noopener noreferrer"
+             aria-label="Ссылка на Twitter">Twitter</a>
+             </li>
 
-        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-          aria-label="Ссылка на Facebook">Facebook</a>
-        </li>
+             <li class="social-item"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+               aria-label="Ссылка на Facebook">Facebook</a>
+             </li>
 
-        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-          aria-label="Ссылка на LinkedIn">LinkedIn</a>
-        </li>
-      </ul>
-      <b>Подпишитесь на рассылку</b>
-      <button type="button" class="button main">Подписаться</button>
+             <li class="social-item"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+               aria-label="Ссылка на LinkedIn">LinkedIn</a>
+             </li>
+            </ul>
+         </div>
+
+         <div class="appeal sign">
+           <b class="appeal-text">Подпишитесь на рассылку</b>
+           <button type="button" class="button main">Подписаться</button>
+         </div>
+       </div>
       </div>
     </footer>
   </body>

@@ -1,3 +1,5 @@
+/*Секция герой*/
+
 .section-title.main-title {
     margin-bottom: 30px;
     font-weight: 900;
@@ -20,19 +22,33 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*Стилизация заголовков*/
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/*Секция Особенности нашей работы*/
+
 .advantages {
+    display: flex;
     padding: 0;
     margin-top: 0;
-    
+}
+
+.holder:not(:last-child) {
+    margin-right: 30px;
 }
 
 .holder-img {
     margin-bottom: 30px;
-    padding: 27px 101px;
+    padding: 25px 101px;
     width: 270px;
     height: 120px;
-    left: 215px;
-    top: 774px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
     text-align: center;
@@ -46,19 +62,30 @@
 }
 
 .holder>p {
+    display: inline-block;
+    width: 270px;
+    height: 75px;
     font-size: 14px;
     line-height: 1.71;
    }
 
-.section-title {
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+/*Секция Чем мы занимаемся*/
+
+.occupation {
+    display: flex;
 }
 
-h3.holder {
+.occupation-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.occupation-type {
+    display: flex;
+    padding: 27px 82px;
+    align-items: center;
+    display: inline-block;
+    width: 370px;
+    height: 70px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -68,8 +95,18 @@ h3.holder {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
+/*Секция Наша команда*/
+
 .section.team {
     background-color: var(--secondary-background-color);
+}
+
+.list-team {
+    display: flex;
+}
+
+.card-team:not(:last-child) {
+    margin-right: 30px;
 }
 
 .photo-team {
@@ -77,24 +114,40 @@ h3.holder {
 }
 
 .name-team {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
-}
-
-.position-team {
-    margin-bottom: 28px;
-}
-
-h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
-.icon {
-    width: 170px;
-    height: 90px;
+.position-team {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
 }
 
+/*Секция Постоянные клиенты*/
+
+.list-client {
+    display: flex;
+}
+
+.icon-client {
+    display: flex;
+    padding: 19pt 41px;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.icon-client:not(:last-child) {
+    margin-right: 30px;
+}
 
 /*цвет основного текста #212121*/
 
