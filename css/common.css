@@ -229,6 +229,7 @@ footer {
 
 .social-links {
     display: flex;
+    margin-bottom: 37px;
     justify-content: center;
     color: var(--secondary-text-color);
 }
