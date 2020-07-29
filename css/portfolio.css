@@ -16,9 +16,13 @@
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     border: 0;
+}
+
+.button-filter:hover
+.button-filter:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .list-card {
@@ -30,12 +34,24 @@
     margin-right: 30px;
 }
 
+.card:nth-child(-n+6) {
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 370px;
+    border: 1px solid #EEEEEE;
+
+}
+
 .photo-card {
+    display: block;
     margin-bottom: 20px;
 }
 
 .name-card {
     margin-bottom: 4px;
+    padding: 0 24px;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
@@ -45,12 +61,14 @@
 
 .type-card {
     margin-bottom: 20px;
+    padding: 0 24px;
     font-size: 16px;
     line-height: 1.88;
 }
 
 .text-hover-card {
     display: flex;
+    overflow: hidden;
     padding: 63px 24px;
     display: inline-block;
     width: 370px;
@@ -60,3 +78,4 @@
     color: var(--primary-white-color);
     background-color: rgba(33, 150, 243, 0.9);
 }
+
