@@ -64,6 +64,11 @@ a {
     /*outline: solid 2px tomato;*/
 }
 
+.section,
+.page-header {
+    width: 1600px;
+}
+
 /*Page header*/
 
 .header {
@@ -80,7 +85,7 @@ a {
 
 .main-title {
     color: var(--primary-white-color);
-    background-color: rgba(47, 48, 58, 0.8);
+    /*background-color: rgba(47, 48, 58, 0.8);*/
 }
 
 .logo {
@@ -157,6 +162,12 @@ background-color: turquoise;
     font-size: 16px;
     line-height: 1.875;
     border: 0; 
+    margin-bottom: 200px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button,
@@ -182,12 +193,16 @@ background-color: turquoise;
 
 footer {
     background-color: #2F303A;
+    width: 1600px;
+    height: 252px;
 }
 
 .container.footer {
-    width: 1200px;
-    height: 269px;
+    background-color: #2F303A;
+    width: 1600px;
+    height: 252px;
     margin: 0;
+    padding: 60px 214px;
 }
 
 .address,
@@ -198,6 +213,7 @@ footer {
 }
 
 .footer .logo {
+    margin: 0;
     margin-bottom: 20px;
     font-family: Raleway, sans-serif;
     font-weight: bold;
@@ -207,6 +223,13 @@ footer {
     color: var(--primary-white-color);
 }
 
+.address {
+    margin: 0;
+    margin-right: 69px;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 .address .contacts-link {
     margin-bottom: 9px;
     line-height: 1.71;
@@ -214,28 +237,21 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.address {
-    margin-right: 59px;
-}
-
 .appeal-list {
     display: flex;
-}
-
-.appeal:not(:last-child) {
-    margin-right: 105px;
 }
 
 .appeal-text {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 33px;
+    margin-right: 155px;
 }
 
 .social-links {
     display: flex;
     margin-bottom: 37px;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--secondary-text-color);
 }
 
@@ -250,13 +266,15 @@ footer {
 .appeal.sign {
     display: flex;
     flex-direction: column;
+    /*width: 582.5px;*/
+    width: calc(100% - 15px)/2;
 }
 
 .appeal .button {
     margin: 0;
     display: inline-block;
     display: flex;
-    align-items: flex-start;
+    align-self: flex-end;
     padding: 10px 29px;
     letter-spacing: 0.06em;
     width: 200px;
