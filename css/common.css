@@ -65,7 +65,7 @@ a {
 }
 
 .section,
-.page-header {
+.page-header{
     width: 1600px;
 }
 
@@ -185,27 +185,21 @@ background-color: turquoise;
 
  /*Стилизация футера*/
 
-.footer {
-    display: flex;
-    align-items: baseline;
-    padding: 60px 15px;
-}
-
 footer {
     background-color: #2F303A;
     width: 1600px;
     height: 252px;
 }
 
-.container.footer {
-    background-color: #2F303A;
-    width: 1600px;
-    height: 252px;
-    margin: 0;
-    padding: 60px 214px;
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    padding: 60px 15px;
 }
 
 .address,
+.address-street,
 .footer .appeal-text,
 .footer .social-links a {
     font-style: normal;
@@ -231,10 +225,11 @@ footer {
 }
 
 .address .contacts-link {
-    margin-bottom: 9px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item {
+    margin-bottom: 9px;
 }
 
 .appeal-list {
@@ -267,14 +262,12 @@ footer {
     display: flex;
     flex-direction: column;
     /*width: 582.5px;*/
-    width: calc(100% - 15px)/2;
 }
 
 .appeal .button {
     margin: 0;
-    display: inline-block;
-    display: flex;
-    align-self: flex-end;
+    display: inline-flex;
+    margin-left: auto;
     padding: 10px 29px;
     letter-spacing: 0.06em;
     width: 200px;
@@ -284,15 +277,11 @@ footer {
     border: 0;
 }
 
-.icon-sign {
+.appeal .button::after {
+    content: "";
     width: 24px;
+    height: 24px;
     background-image: url("../img/icon-send.svg");
-    padding-left: 5px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    position: absolute;
-    background-repeat : no-repeat;
-    margin-left: 118px;
+    margin-left: 10px;
     }
 
