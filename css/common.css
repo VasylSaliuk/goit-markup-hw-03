@@ -64,11 +64,6 @@ a {
     /*outline: solid 2px tomato;*/
 }
 
-.section,
-.page-header{
-    width: 1600px;
-}
-
 /*Page header*/
 
 .header {
@@ -187,7 +182,6 @@ background-color: turquoise;
 
 footer {
     background-color: #2F303A;
-    width: 1600px;
     height: 252px;
 }
 
